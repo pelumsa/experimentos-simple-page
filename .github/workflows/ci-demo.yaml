@@ -1,0 +1,9 @@
+name: Demo GitHub Actions
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "¡Hola desde GitHub Actions!"'
+      - run: 'echo "Usuario: ${{ github.actor }}, evento: ${{ github.event_name }}"'
